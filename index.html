@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="logo" class="logo" />
+          <ul>
+            <li><a href="#about">Home</a></li>
+            <li><a href="#about1">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+   
+        <section id="about">
+          <div class="about">
+              <div class="image-container">
+                  <img src="images/Open Peeps - Avatar and Backdrop.png" alt="Profile Image" />
+              </div>
+              <div class="info-box">
+                  <div class="text">
+                      <h3>Hi, I'm</h3>
+                      <h1>Nashita Bhulani</h1>
+                      <span>Web Developer</span>
+                  </div>
+                  <div class="btn-group">
+                  
+                    <a href="images/Resume.pdf" download class="btn">Download CV</a>
+                    <!-- <div class="btn">Contact</div> -->
+                  </div>
+                  <div class="socials">
+                    <a href="https://github.com/nashitabhulani" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="www.linkedin.com/in/nashita-bhulani-73a308225" target="_blank">
+                      <i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      <!-- about section -->
+      <section id="about1">
+        <div class="about-section">
+          <div class="text-content">
+            <h2>About Me</h2>
+            <p>Hi, I'm <strong>Nashita Bhulani</strong>, a passionate web developer with a BSc in IT from SK Somaiya College. I have a strong foundation in front-end development and love creating user-friendly, visually appealing websites. My journey in tech has been fueled by my curiosity and commitment to continuous learning.</p>
+            <p>In addition to my technical skills, I am highly motivated to solve real-world problems through technology. </p>
+          </div>
+          <div class="image2">
+            <img src="images/image2.avif" alt="Profile Picture" />
+          </div>
+        </div>
+      </section>
+
+      <!-- project section -->
+    
+      <section id="projects">
+      
+        <h2 class="section-title">Recent Projects</h2>
+        <div id="projects-grid">
+
+          <div class="project-card">
+            <img src="images/project1.png" alt="project1">
+            <h3>Weather app</h3>
+            <p>A weather app built with ReactJS. Simply enter the name of any city, and the app will fetch real-time weather data for you.</p>
+          <div class="btn-group">
+            <div class="btn"><a href="https://github.com/nashitabhulani/Weather_app-WD_04" target="_blank">Github Repo</a>
+              </div>
+          </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/project2.png" alt="project1">
+            <h3>News Page</h3>
+            <p>A responsive web landing page created using ReactJS. This is a news page which fetches the real-time news using an API. Stay informed on all the latest updates.</p>
+          <div class="btn-group">
+            <div class="btn"><a href="https://github.com/nashitabhulani/NewsPage-React" target="_blank">Github Repo</a></div>
+          </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/project3.png" alt="project1">
+            <h3>Furniture Selling- eCommerce</h3>
+            <p>A project I built in my final year, using PHP and MySQL. This is a furiniture selling website where the user can buy and track their orders. Also they can leave reviews and read blog posts about furnishing.</p>
+          <div class="btn-group">
+            <div class="btn"><a href="https://github.com/nashitabhulani/mySpace--Furniture-Selling" target="_blank">Github Repo</a></div>
+          </div>
+          </div>
+
+      </div>
+      </section>
+      
+      <!-- contact section -->
+
+      <section id="contact">
+        <div class="contact">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> nashitabhulani4@gmail.com</p>
+          </div>
+          <div class="contact-right">
+           
+            <form id="contactForm" name="submit-to-google-sheet">
+              <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn">Send Message</button>
+          </form>
+          
+            <p id="successMessage" style="display:none; color: green;">Message sent successfully!</p>
+          </div>
+        </div>
+      </section>
+      
+  </body>
+</html>
+
+
+<!-- <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script> -->
+<script>
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzsDBLcDzW6Q4SwbiikVI_yg6AsFQFBpaphLqNCA3vwT7ivtViuzuLcLEcf2KFASSj6AA/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const successMessage = document.getElementById("successMessage");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    // Send form data to Google Script
+    fetch(scriptURL, { 
+      method: 'POST', 
+      body: new FormData(form)
+    })
+    .then(response => response.json())  // Parse the response as JSON
+    .then(data => {
+      if (data.result === 'success') {
+        console.log('Success!', data);
+        successMessage.style.display = 'block';  // Display success message
+        form.reset();  // Reset the form fields
+      } else {
+        console.error('Error!', data.error);  // Log error if there was an issue
+      }
+    })
+    .catch(error => console.error('Error!', error.message));
+  });
+
+
+</script>
+
